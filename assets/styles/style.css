@@ -1,0 +1,348 @@
+:root{
+    --maintextColor:  #222222;
+    --btnColor: #086CF9;
+    --textColor: #555555;
+    --loremColor: #333333;
+    --courseColor: #ECF4FF;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    font-family: "DM Sans",sans-serif;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    height: 110px;
+    margin: 0 auto;
+}
+
+nav .logo{
+    width: 25%;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 45%;
+}
+
+nav ul li{
+    list-style: none;
+}
+
+nav a{
+    text-decoration: none;
+    color: var(--maintextColor);
+    font-size: 15px;
+    line-height: 155%;
+}
+
+nav select{
+    color: var(--maintextColor);
+    border: none;
+    font-size: 15px;
+    line-height: 155%;
+}
+
+.nav-btn{
+    width: 25%;
+    text-align: right;
+}
+
+.nav-btn a{
+    margin-right: 15%;
+}
+
+.button{
+    padding: 12px 24px;
+    border: none;
+    outline: none;
+    background: var(--btnColor);
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    font-family: "DM Sans";
+    font-size: 15px;
+}
+
+nav select:hover,
+nav a:hover{
+    color: var(--btnColor);
+}
+
+/* Main styles */
+
+main{
+    position: relative;
+    width: 100%;
+    height: 110vh;
+    background-image: url(/assets/images/main.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    text-align: center;
+}
+
+.back{
+    width: 100%;
+    height: 110vh;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.main-info{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+main h1{
+    font-weight: bold;
+    font-size: 54px;
+    line-height: 73px;
+    color: white;
+}
+
+.main-info p{
+    color: white;
+    padding: 0 18%;
+    font-size: 15px;
+    line-height: 155%;
+    margin-top: 20px;
+    margin-bottom: 42px;
+}
+
+.statistic{
+    position: absolute;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -90px;
+    height: 180px;
+    background-color: white;
+    box-shadow: 0px 11px 35px rgba(0, 0, 0, 0.08);
+    border-radius: 4px;
+}
+
+.statistica{
+    display: flex;
+    align-items: center;
+}
+
+.statistic-info{
+    margin-left: 24px;
+    text-align: left;
+}
+
+.statistic-info h2{
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 47px;
+    color: var(--maintextColor);
+}
+
+.statistic-info p{
+    font-size: 15px;
+    line-height: 155%;
+    color: var(--btnColor);
+    margin-top: 8px;
+}
+
+/* Container styles */
+.container{
+    display: flex;
+    align-items: center;
+    padding-top: 200px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.container .left-side{
+    width: 50%;
+}
+
+.left-side h1{
+    margin-bottom: 24px;
+}
+
+.maintitle{
+    font-size: 46px;
+    line-height: 62px;
+    color: var(--maintextColor);
+    font-weight: bold;
+    margin-bottom: 12px;}
+
+.maintext{
+    font-size: 15px;
+    line-height: 155%;
+    color: var(--textColor);
+}
+
+.left-side p:nth-child(2){
+    padding-right: 17%;
+}
+
+.left-side p:nth-child(3){
+    font-size: 19px;
+    line-height: 28px;
+    color: var(--loremColor);
+    margin-top: 5px;
+    margin-bottom: 30px;
+    padding-right: 10%;
+}
+
+.container .right-side{
+    width: 50%;
+    position: relative;
+}
+
+.right-side img{
+    width: 100%;
+}
+
+.right-side div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    background-color: white;
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.right-side i{
+    color: var(--btnColor);
+    font-size: 22px;
+}
+
+/* Work styles */
+.work{
+    width: 80%;
+    text-align: center;
+    margin: 120px auto;
+}
+
+.cards{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 45px;
+}
+
+.cards .card{
+    width: 21.5%;
+}
+
+.card h2{
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 31px;
+    color: var(--maintextColor);
+    margin: 16px 0;
+}
+
+.card p{
+    font-size: 13px;
+}
+
+
+/* Courses styles */
+
+.courses{
+    width: 100%;
+    background-color: var(--courseColor);
+    text-align: center;
+    padding: 60px 0;
+}
+
+.courses > p{
+    margin-bottom: 45px;
+}
+
+.top-courses,
+.bottom-courses{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.course{
+    background-color: white;
+    text-align: left;
+    padding: 22px;
+    margin: 11px;
+    border-radius: 6px;
+}
+
+.course > img{
+    width: 100%;
+}
+
+.icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 22px;
+    margin-bottom: 42px;
+}
+
+.icons div{
+    border: 0.6px solid #C8C8C8;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icons i{
+    font-size: 15px;
+    color: var(--btnColor);
+}
+
+.course-info h2{
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 31px;
+    color: var(--loremColor);
+    display: flex;
+    justify-content: space-between;
+}
+
+.course-info h2 span{
+    color: var(--btnColor);
+}
+
+.course-info p{
+    font-size: 13px;
+    line-height: 155%;
+    color: var(--textColor);
+    margin: 16px 0;
+}
+
+.courses .button{
+    margin-top: 45px;
+}
