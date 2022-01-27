@@ -4,6 +4,7 @@
     --textColor: #555555;
     --loremColor: #333333;
     --courseColor: #ECF4FF;
+    --information: #D3E5FE;
 }
 
 *{
@@ -87,7 +88,7 @@ main{
     position: relative;
     width: 100%;
     height: 110vh;
-    background-image: url(assets/images/main.png);
+    background-image: url(/Registan.uz/assets/images/main.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position-x: center;
@@ -345,4 +346,120 @@ main h1{
 
 .courses .button{
     margin-top: 45px;
+}
+
+/* Meet styles */
+
+.meet, .blog, .event{
+    width: 100%;
+    text-align: center;
+    margin: 120px 0;
+}
+
+.mentors, .events, .blogs{
+    width: 80%;
+    margin: 45px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mentor, .event-image{
+    position: relative;
+    width: 32%;
+    box-shadow: 0px 11px 55px rgba(0, 0, 0, 0.08);
+    border-radius: 6px;
+    text-align: left;
+}
+
+.mentor img,
+.event-image img,
+.blog img{
+    width: 100%;
+}
+
+.mentor h2,
+.mentor > p{
+    margin-left: 32px;
+}
+
+.mentor-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 32px;
+}
+
+.fa-star{
+    color: var(--btnColor);
+}
+
+/* Event styles */
+
+.event-info{
+    padding: 24px;
+}
+
+.event-info h3,
+.blog h3{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+    color: var(--maintextColor);
+    padding-right: 20%;
+}
+
+.event-info p{
+    font-size: 13px;
+    margin-top: 20px;
+}
+.fa-map-marker-alt{
+    margin-left: 10%;
+}
+
+.event .aprel{
+    width: 20%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* Information styles */
+
+.information{
+    width: 100%;
+    background-color: var(--information);
+    padding: 70px 20%;
+}
+
+.inform{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Blog styles */
+.blog-main{
+    width: 32%;
+    text-align: left;
+    border: 0.5px solid #BFBFBF;
+    border-radius: 4px;
+}
+
+.blog-main p{
+    font-size: 13px;
+    margin-top: 12px;
+    margin-bottom: 24px;
+}
+
+.blog-info{
+    padding: 26px;
+}
+
+.blog-info h3{
+    padding-right: 0;
+}
+
+.blog-info a{
+    text-decoration: none;
 }
