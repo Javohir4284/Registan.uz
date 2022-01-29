@@ -463,3 +463,251 @@ main h1{
 .blog-info a{
     text-decoration: none;
 }
+
+/* Carousel started */
+
+.carousel{
+    width: 100%;
+    text-align: center;
+}
+
+#container {
+    width: 80%;
+    display: grid;
+    place-items: center;
+    position: relative;
+    margin: 0 auto;
+}
+
+#slider-container {
+    height: 300px;
+    width: 94%;  
+    overflow: hidden;
+    padding: 20px;
+}
+
+#slider-container .btn {
+    position: absolute;
+    z-index: 1000;
+    cursor: pointer;
+    top: 0;
+    height: 30px;
+    width: 30px;
+    border-left: 8px solid #D5D4D4;
+    border-top: 8px solid #D5D4D4;
+}
+
+#slider-container .btn:hover {
+    transform: scale(1.2);
+    border-left: 8px solid var(--btnColor);
+    border-top: 8px solid var(--btnColor);
+}
+
+
+
+#slider-container .btn:first-of-type {
+    transform: rotate(-45deg);
+    left: 10px;
+    top: 150px;
+}
+
+#slider-container .btn:last-of-type {
+    transform: rotate(135deg);
+    right: 10px;
+    top: 150px;
+}
+
+#slider-container #slider {
+    display: flex;
+    width: 1000%;
+    height: 100%;
+    transition: all 0.5s;
+}
+
+#slider-container #slider .slide {
+    position: relative;
+    width: 310px !important;
+    height: 250px;
+    margin: auto 12px;
+    background-color: white;
+    display: flex;    
+    justify-content: space-between;
+    box-shadow: 0px 13px 45px rgba(0, 0, 0, 0.08);
+    border-radius: 6px;
+    text-align: left;
+    }
+.slide-info {
+    width: 85%;
+    margin: 30px auto;
+}
+
+#slider-container #slider .slide .slide-avatar {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+
+.slide-avatar img {
+    width: 30%;
+    margin-right: 20px;
+}
+
+.first_name{
+    width: 70%;
+    text-align: left;
+}
+
+.slide-info .first_name h5 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+    color: var(--maintextColor);
+}
+
+@media only screen and (min-width: 1100px) {
+    #slider-container #slider .slide {
+    width: calc(2.5% - 20px);
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+    #slider-container #slider .slide {
+    width: calc(3.3333333% - 20px);
+  }
+}
+
+@media only screen and (max-width: 900px) {
+    #slider-container #slider .slide {
+    width: calc(5% - 20px);
+  }
+}
+
+@media only screen and (max-width: 550px) {
+    #slider-container #slider .slide {
+    width: calc(10% - 20px);
+  }
+}
+
+/* Student styles */
+.student{
+    width: 65%;
+    margin: 120px auto;
+    background-color: var(--btnColor);
+    border-radius: 6px;
+    text-align: center;
+    padding: 45px 0;
+}
+
+.student h1{
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 47px;
+    color: #FCFCFC;
+}
+
+.student p{
+    margin-top: 12px;
+    font-size: 15px;
+    line-height: 155%;
+    color: #F9F9F9;
+    margin-bottom: 40px;
+}
+
+.student-btn{
+    position: relative;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.student input{
+    width: 100%;
+    height: 60px;
+    text-indent: 22px;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+}
+
+.student input::placeholder{
+    font-size: 14px;
+    line-height: 155%;
+    color: var(--textColor);
+}
+
+.student button{
+    position: absolute;
+    right: 8px;
+    top: 8px;
+}
+
+/* Footer styles */
+
+footer{
+    width: 100%;
+    padding:60px 10% ;
+    background-color: var(--information);
+    display: flex;
+    justify-content: space-around;
+}
+
+footer h1{
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 39px;
+    color: var(--maintextColor);
+    margin-bottom: 22px;
+}
+
+footer li{
+    list-style: none;
+    margin: 15px 0;
+}
+
+footer a{
+    font-size: 15px;
+    line-height: 21px;
+    color: #444444;
+    text-decoration: none;
+}
+
+.btn{
+    display: inline-block;
+    border-left: 2px solid var(--btnColor);
+    border-top: 2px solid var(--btnColor);
+    width: 8px;
+    height: 8px;
+    transform: rotate(135deg);
+    margin-right: 14px;
+}
+
+.contact i{
+    margin-right: 8px;
+}
+.edu{
+    width: 33%;
+}
+
+.edu p{
+    margin-bottom: 30px;
+}
+
+.media{
+    display: flex;
+    align-items: center;
+}
+
+.social{
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    margin-right: 15px;
+    border-radius: 4px;
+}
+
+.social i{
+    color: var(--btnColor);
+}
